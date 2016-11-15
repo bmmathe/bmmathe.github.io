@@ -16,20 +16,22 @@ Production - production build deployed to a production environment
 
 There are also 4 different API environments, local, dev, QA, and production.  The production build needs to point to one of these three API tiers depending on which environment it is deployed to.
 
-Development setup
+### Development setup
 React and Redux
 Webpack for to prepare the site for distribution
 npm for package management and tasks
 ava for unit testing
 babel for transpiling ES6 and ES7 features
 
-Configuration issues
+##### Configuration issues
 Our primary configuration issue was the URL for the API.  In local mode we wanted it to be a localhost address.  In dev we wanted to use the dev alias, qa the qa alias, and prod the production URL.
-Hardcoding the URL in the javascript files obviously wouldn't work.  My first thought was to use webpack features to expose a Config alias.
+Hardcoding the URL in the javascript files obviously wouldn't work.  
 
-Using Webpack
-We initially had a webpack.dev.config and webpack.prod.config.  The difference was how webpack packaged the web site.  In dev mode it would host the site from the src folder and injected the hot reloading feature.
-In prod it would minifify and bundle our js and css files.
+##### Using Webpack
+We have a webpack.dev.config and webpack.prod.config.  In dev mode the site from the src folder and a hot reloading feature is injected as a dependency. The production webpack config bundles and minifies the Javascript files and css.
+
+### First Attempt
+My first thought was to use webpack features to expose a [Config external](https://webpack.github.io/docs/configuration.html#externals).
 
 To add the QA settings I copied the webpack.prod.config and created a webpack.qa.config.  The only difference was the Config external.
 Here is an example of the production external:
@@ -40,12 +42,10 @@ Here is an example of the production external:
   }
 {% endhighlight %}
 
-This worked great.  In our Javascript file we referenced the external with an import statement.
-However when our unit tests ran the import statement would fail
+This worked great.  In our Javascript file we referenced the external with an import statement. However when our unit tests ran the import statement would fail. The problem with this was our unit tests couldn't resolve the config import because we weren't packing the build first.  I didn't want to require packing the web site for our unit tests to run locally so I tried something different. 
 
-The problem with this was our unit tests couldn't resolve the config import because we weren't packing the build first.  I didn't want to require packing the web site for our unit tests to run locally so I tried something different. 
-
-Next, I tried using an alias and specifying a Javascript file which contained our environment specific settings.
+### Second Attempt
+Next, I tried using a [webpack alias](https://webpack.github.io/docs/configuration.html#resolve-alias) and specifying a Javascript file which contained our environment specific settings.
 
 {% highlight javascript %}
       alias: {
@@ -56,8 +56,9 @@ Next, I tried using an alias and specifying a Javascript file which contained ou
 This obviously didn't work for the same reason as the first attempt.  When running tests locally we don't pack the web site.  I did however like this solution more simply because we were able to specify which config we wanted as a parameter in the build.
 So this did take care of having a duplicate production webpack config for QA.
 
-Final Solution
+### Final Solution
 The final solution was to simply go back to good ole' copying files.
+
 I created a config folder and put our configuration settings in json files `dev.json`, `prod.json`, and `qa.json`.  
 The trick is to copy one of the environment specific configuration files to a `default.json`.  The javascript code imports the `default.json` file like this:
 

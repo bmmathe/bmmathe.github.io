@@ -10,4 +10,7 @@ github_username:  bmmathe
 
 # Build settings
 markdown: kramdown
+kramdown:
+    toc_levels: 1..3
+
 highlighter: rouge
