@@ -1,5 +1,12 @@
 source "https://rubygems.org"
 
-gem "github-pages", "78"
-gem "rake", "~> 11.1", require: false
-gem "foreman", "~> 0.81", require: false
+gem "github-pages", group: :jekyll_plugins
+
+group :jekyll_plugins do
+  gem "jekyll-paginate"
+  gem "jekyll-sitemap"
+  gem "jekyll-gist"
+  gem "jekyll-feed"
+  gem "jemoji"
+  gem "minimal-mistakes-jekyll"
+end

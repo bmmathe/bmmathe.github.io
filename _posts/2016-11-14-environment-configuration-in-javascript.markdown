@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "Environment Configuration Settings in Javascript"
 date:   2016-11-14 18:20:36
 categories: javascript
