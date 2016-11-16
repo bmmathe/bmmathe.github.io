@@ -83,7 +83,7 @@ author:
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "I create a lot of software."
   location         : "Atlanta, GA"
-  email            : "brett.mathe@gmail.com"
+  email            : 
   uri              : "http://brettmathe.com"
   bitbucket        :
   codepen          :
