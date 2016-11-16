@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: single
 title: About
 permalink: /about/
+author_profile: true
 ---
 
 As an Enterprise Architect, I am responsible for the technology that will deliver value to our customers.  I am a proven technology leader that has a passion for innovation.  
