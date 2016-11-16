@@ -1,4 +1,21 @@
 ---
-layout: home
-author_profile: true
+layout: splash
+header:
+  overlay_color: "#000"
+  overlay_filter: "0.5"
+  overlay_image: /assets/images/unsplash-image-1.jpg
+  cta_label: "Contact"
+  cta_url: "mailto:brett.mathe@gmail.com"
+  caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
+excerpt: "Always learning and passionate for creating."
+intro: 
+  - excerpt: '*Our greatest weakness lies in giving up. The most certain way to succeed is always to try just one more time. - Thomas Edison*'
 ---
+
+<h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
+
+{% for post in paginator.posts %}
+  {% include archive-single.html %}
+{% endfor %}
+
+{% include paginator.html %}

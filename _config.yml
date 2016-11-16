@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en"
-title                    : "brettmathe"
+title                    : "brett mathe"
 title_separator          : "-"
 name                     : "Brett Mathe"
 description              : "Software development and architecture tidbits."
@@ -81,7 +81,7 @@ analytics:
 author:
   name             : *name
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I do a lot of software."
+  bio              : "I create a lot of software."
   location         : "Atlanta, GA"
   email            : "brett.mathe@gmail.com"
   uri              : "http://brettmathe.com"
@@ -246,3 +246,10 @@ defaults:
       comments: # true
       share: true
       related: true
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: false
