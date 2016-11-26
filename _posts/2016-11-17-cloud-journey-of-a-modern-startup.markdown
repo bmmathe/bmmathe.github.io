@@ -3,7 +3,7 @@ title:  "Cloud Journey of a Modern start-up"
 date:   2016-11-14 18:20:36
 categories: cloud
 ---
-A couple months ago a colleague and I decided to work on an off-hours project to gain more skills in non-Microsoft technologies.  We wanted to branch out and see what it's like out there for start-ups.  Being on a budget and completely self-funded we wanted to find a cloud provider that cost little to nothing to operate our web site.  We decided to use common start-up technologies like React, node, Linux, and chose to use a no-SQL document database.  This is a far departure from our typical Enterprise stack which consists of .Net services, ASP.Net web sites, and SQL Server partly deployed on-prem and partly in Azure.
+A couple months ago a colleague and I decided to work on an off-hours project to gain more skills with non-Microsoft technologies.  We wanted to branch out and see what it's like out there for start-ups.  Being on a budget and completely self-funded we wanted to find a cloud provider that cost little to nothing to operate our web site.  We decided to use common start-up technologies like React, node, Linux, and chose to use a no-SQL document database.  This is a far departure from our typical Enterprise stack which consists of .Net services, ASP.Net web sites, and SQL Server partly deployed on-prem and partly in Azure.
 
 I want to compare and contrast the different services we explored over the past month or so and share where we landed.
 
