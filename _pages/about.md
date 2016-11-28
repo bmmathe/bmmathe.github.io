@@ -1,12 +1,14 @@
 ---
-layout: single
+layout: splash
 title: About
 permalink: /about/
-author_profile: true
+header:
+  overlay_color: "#000"
+  overlay_filter: "0.5"
+  overlay_image: /assets/images/fdvttpkakky-redd-angelo.jpg    
+  caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
+excerpt: "As an Enterprise Architect, I am responsible for the technology that will deliver value to our customers.  I am a proven technology leader that has a passion for innovation. My philosophy for building software is start small and evolve rapidly by continuously delivering small batch changes and proving our assumptions."
 ---
-
-As an Enterprise Architect, I am responsible for the technology that will deliver value to our customers.  I am a proven technology leader that has a passion for innovation.  
-My philosophy for building software is start small and evolve rapidly by continuously delivering small batch changes and proving our assumptions.  
 
 ### Who I am: 
 
