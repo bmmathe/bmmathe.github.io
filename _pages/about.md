@@ -5,7 +5,7 @@ permalink: /about/
 header:
   overlay_color: "#000"
   overlay_filter: "0.5"
-  overlay_image: /assets/images/fdvttpkakky-redd-angelo.jpg    
+  overlay_image: /assets/images/black-and-white-device-electronics-698808.jpg    
   caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
 excerpt: "As an Enterprise Architect, I am responsible for the technology that will deliver value to our customers.  I am a proven technology leader that has a passion for innovation. My philosophy for building software is start small and evolve rapidly by continuously delivering small batch changes and proving our assumptions."
 ---
