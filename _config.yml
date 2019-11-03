@@ -11,7 +11,7 @@ title                    : "brett mathe"
 title_separator          : "-"
 name                     : "Brett Mathe"
 description              : "Software development and architecture tidbits."
-url                      : "http://brettmathe.com"
+url                      : "https://brettmathe.com"
 baseurl                  : ""
 repository               : "bmmathe/bmmathe.github.io"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
@@ -84,7 +84,7 @@ author:
   bio              : "I create a lot of software."
   location         : "Atlanta, GA"
   email            : 
-  uri              : "http://brettmathe.com"
+  uri              : "https://brettmathe.com"
   bitbucket        :
   codepen          :
   dribbble         :
