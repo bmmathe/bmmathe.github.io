@@ -32,5 +32,5 @@ I can do better.  If I have to run a script more than once to deploy software Iâ
 
 People want to be better.  I seek out help from people who excel in areas I do not.  I do not wait to be taught.  My peers seek advice from me because I have a proven track record of successful projects and they know I can solve problems. Excellence is contagious.
 
-To learn more about me, visit my [linkedin profile](https://www.linkedin.com/in/brett-mathe-3b03784).
+To learn more about me, visit my [linkedin profile](https://www.linkedin.com/in/brettmathe).
 You can also Tweet me @bmmathe
